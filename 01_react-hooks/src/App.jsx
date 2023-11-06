@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 
-
-
-
 function App() {
   const [formData, setFormData] = useState('')
   const [todos, setTodos] = useState([])
@@ -13,15 +10,12 @@ function App() {
       alert('Please enter a todo')
       return
     }
-
     setTodos([...todos, formData])
-    localStorage.setItem(`list${formData}`, formData)
     setFormData('')
   }
 
   const removeTodo = () => {
     todos.pop()
-    localStorage.removeItem(`list${todos}`)
     setTodos([...todos])
   }
   return (
