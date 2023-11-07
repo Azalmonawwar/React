@@ -30,4 +30,4 @@ To run the projects, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git@github.com:Azalmonawwar/react.git
+   git clone https://github.com/Azalmonawwar/react.git
