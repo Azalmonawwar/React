@@ -30,4 +30,4 @@ To run the projects, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/react-learning-projects.git
+   git@github.com:Azalmonawwar/react.git
