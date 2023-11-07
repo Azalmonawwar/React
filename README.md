@@ -15,14 +15,12 @@ Welcome to my React repository! Here, you'll find a collection of React learning
 ### Advanced
 - [Context API] - Exploring the React Context API for global state management.
 - [Hooks] - Dive into React Hooks and their use cases.
+- [Authentication] - Proper authentication using Appwrite with react.
 
 ## Projects
+1. [E-commerce Website] - A full-fledged e-commerce website using React, Redux, and Firebase.
 
-1. [Task Manager App] - A simple task management application built with React.
-
-2. [E-commerce Website] - A full-fledged e-commerce website using React, Redux, and Firebase.
-
-3. [Blog Platform] - A blogging platform built with React and a backend API.
+2. [Blog Platform] - A blogging platform built with React and a backend API.
 
 ## Getting Started
 
