@@ -1,6 +1,6 @@
 # React Learning and Projects
 
-Welcome to my React repository! Here, you'll find a collection of React learning materials and some of the projects I've worked on using React.
+Welcome to my React repository! Here, you'll find a collection of React learning materials and some projects I've worked on using React.
 
 ## Learning
 
@@ -37,12 +37,12 @@ To run the projects, follow these steps:
 
    ```
 
-2. Install all neccessary package:
+2. Install all necessary packages:
    ```bash
    npm install
 
    ```
-3. To run this projects:
+3. To run this project:
    ```bash
    npm run dev
    ```
