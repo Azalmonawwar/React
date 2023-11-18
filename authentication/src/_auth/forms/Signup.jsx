@@ -3,9 +3,11 @@ import { useState } from "react";
 import { useUserContext } from "../../context/AuthContext";
 import { createUserAccount } from "../../appwrite/services";
 const Signup = () => {
-    const { isAuth } = useUserContext();
-    console.log(isAuth)
+    const { isAuth, isLoading } = useUserContext();
     const navigate = useNavigate()
+    if (isAuth) {
+        navigate('/')
+    }
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -35,6 +37,16 @@ const Signup = () => {
     if (isAuth) {
         // navigate('/')
         console.log('already authenticated')
+    }
+    if (isLoading) {
+        return (
+            <div className="flex flex-col items-center flex-1 min-h-screen justify-center  bg-slate-900 p-5 ">
+                <h1 className="text-xl text-white mb-10 font-bold ">
+                    Loading...
+                </h1>
+            </div>
+        )
+
     }
     return (
 
@@ -67,7 +79,7 @@ const Signup = () => {
                     <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
                 </div>
 
-
+                <Link to={'/sign-in'} className="text-white mr-2">Already registered Signin</Link>
                 <button type="submit"
 
                     className="text-white bg-blue-700
